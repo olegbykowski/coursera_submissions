@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lunch Check</title>
+  </head>
+  <body>
+    <h1>Lunch Check</h1>
+    <div ng-controller='LunchCheckController'>
+      <input type="text"
+             ng-model="name"
+             ng-style="{'border' : '3px solid '+chosenColor}"
+             <div>
+              <button ng-click="CheckIfTooMuch();">Check If Too Much</button>
+              <br>
+              <div ng-style="{color: chosenColor};">
+                {{myMessage()}}
+              </div>
+            </div>
+  </div>
+  </body>
+</html>
+
+<!-- !!! While reviewing do NOT consider and empty item, i.e., `, ,` as an item towards to the count -->
